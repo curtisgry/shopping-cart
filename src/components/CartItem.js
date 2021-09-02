@@ -5,7 +5,7 @@ import CartContext from '../context/CartContext'
 const imgStyles = {
     width: "200px",
     height: "200px",
-    objectFit: "fill"
+    objectFit: "cover"
 }
 
 
