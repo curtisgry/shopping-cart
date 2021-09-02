@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.d52c7710.chunk.css",
-    "main.js": "/static/js/main.f1307bbb.chunk.js",
-    "main.js.map": "/static/js/main.f1307bbb.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.fda4da6d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.fda4da6d.js.map",
-    "static/js/2.7255eb8c.chunk.js": "/static/js/2.7255eb8c.chunk.js",
-    "static/js/2.7255eb8c.chunk.js.map": "/static/js/2.7255eb8c.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.d52c7710.chunk.css.map": "/static/css/main.d52c7710.chunk.css.map",
-    "static/js/2.7255eb8c.chunk.js.LICENSE.txt": "/static/js/2.7255eb8c.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/static/media/Raleway-VariableFont_wght.3fefe681.ttf",
-    "static/media/backpack.bc672869.jpg": "/static/media/backpack.bc672869.jpg",
-    "static/media/black-sunglasses.2d758c66.jpg": "/static/media/black-sunglasses.2d758c66.jpg",
-    "static/media/pink-sunglasses.1870d97e.jpg": "/static/media/pink-sunglasses.1870d97e.jpg",
-    "static/media/store.4c02c0e3.jpg": "/static/media/store.4c02c0e3.jpg",
-    "static/media/watch1.72372ddf.jpg": "/static/media/watch1.72372ddf.jpg",
-    "static/media/watch2.e594edd9.jpg": "/static/media/watch2.e594edd9.jpg"
+    "main.css": "/shopping-cart/static/css/main.60024626.chunk.css",
+    "main.js": "/shopping-cart/static/js/main.6e3ed0d0.chunk.js",
+    "main.js.map": "/shopping-cart/static/js/main.6e3ed0d0.chunk.js.map",
+    "runtime-main.js": "/shopping-cart/static/js/runtime-main.84c7d18a.js",
+    "runtime-main.js.map": "/shopping-cart/static/js/runtime-main.84c7d18a.js.map",
+    "static/js/2.7255eb8c.chunk.js": "/shopping-cart/static/js/2.7255eb8c.chunk.js",
+    "static/js/2.7255eb8c.chunk.js.map": "/shopping-cart/static/js/2.7255eb8c.chunk.js.map",
+    "index.html": "/shopping-cart/index.html",
+    "static/css/main.60024626.chunk.css.map": "/shopping-cart/static/css/main.60024626.chunk.css.map",
+    "static/js/2.7255eb8c.chunk.js.LICENSE.txt": "/shopping-cart/static/js/2.7255eb8c.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/shopping-cart/static/media/Raleway-VariableFont_wght.3fefe681.ttf",
+    "static/media/backpack.bc672869.jpg": "/shopping-cart/static/media/backpack.bc672869.jpg",
+    "static/media/black-sunglasses.2d758c66.jpg": "/shopping-cart/static/media/black-sunglasses.2d758c66.jpg",
+    "static/media/pink-sunglasses.1870d97e.jpg": "/shopping-cart/static/media/pink-sunglasses.1870d97e.jpg",
+    "static/media/store.4c02c0e3.jpg": "/shopping-cart/static/media/store.4c02c0e3.jpg",
+    "static/media/watch1.72372ddf.jpg": "/shopping-cart/static/media/watch1.72372ddf.jpg",
+    "static/media/watch2.e594edd9.jpg": "/shopping-cart/static/media/watch2.e594edd9.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.fda4da6d.js",
+    "static/js/runtime-main.84c7d18a.js",
     "static/js/2.7255eb8c.chunk.js",
-    "static/css/main.d52c7710.chunk.css",
-    "static/js/main.f1307bbb.chunk.js"
+    "static/css/main.60024626.chunk.css",
+    "static/js/main.6e3ed0d0.chunk.js"
   ]
 }
