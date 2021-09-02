@@ -1,38 +1,199 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: Raleway;
+  src: url('./assets/Raleway-VariableFont_wght.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-family: Raleway, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-image: url('./assets/page-bg.png');
+  margin: 0;
+  padding: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* home page styles */
+.home-page-container {
+  opacity: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  margin: 50px auto;
+  transition: all 0.4s ease;
+}
+
+/* shop page styles */
+.shop-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 30%;
+  margin: 0 auto;
+  transform: rotate(-2deg);
+}
+
+.shop-page-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px;
+  justify-items: center;
+}
+
+/* Item Componenet styles */
+.item-container {
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.added-notification {
+  position: relative;
+  top: 200px;
+  left: 30%;
+  background-color: black;
+  color: white;
+  width: fit-content;
+  padding: 5px;
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.item-title {
+  position: relative;
+  width: 80%;
+  height: 30px;
+  top: 60px;
+  left: 10px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.item-info {
+  position: relative;
+  bottom: 100px;
+  left: 10px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.btn {
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btn:hover,
+.nav-link:hover,
+.cart-link:hover {
+  background-color: rgb(182, 49, 49);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* nav styles */
+
+li {
+  list-style: none;
+  list-style-type: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cart-number {
+  background-color: rgb(182, 49, 49);
+  padding: 0 5px;
+}
+
+.nav-link,
+.cart-link {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 4px 10px;
+}
+
+.nav-link:visited,
+.cart-link:visited {
+  color: white;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+}
+
+.nav-container-left {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-container-right {
+  padding-right: 40px;
+}
+
+/* Cart page */
+.cart-page-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+}
+.cart-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-item-title {
+  position: relative;
+  width: fit-content;
+  height: 30px;
+  top: 30px;
+  left: 10px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.cart-item-info {
+  display: flex;
+  height: fit-content;
+  width: 200px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total {
+  background-color: black;
+  color: white;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-top: 25px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* transitions */
+
+.fade-in {
+  opacity: 1;
+}
+
+.show-notification {
+  transform: translateX(0);
+  opacity: 1;
 }
