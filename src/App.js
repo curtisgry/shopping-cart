@@ -24,23 +24,40 @@ function App() {
   setNumItems(total)
   }
 
+  function changeItemCount(event) {
+    const newItem = products.find(item => item.id === event.target.id)
+    if(newItem.count !== 0){
+      if(event.target.textContent === '-'){
+        newItem.count = newItem.count - 1;
+        //if the count gets to zero remove the item completely from cart
+        if (newItem.count === 0){
+         
+          const stillInCart = cartItems.filter(item => item.count !== 0)
+
+          setCartItems([
+            ...stillInCart
+          ])
+          return
+        }
+      } else if(event.target.textContent === '+') {
+        newItem.count = newItem.count + 1;
+      }
+      setCartItems([ ...cartItems ])
+    }     
+  }
+
   function addToCart(event) {
       const newItem = products.find(item => item.id === event.target.id)
       newItem.count = newItem.count + 1;
       //check if item is already in the cart, if it is just update the count and dont add a new item to the array
       const shouldAdd = cartItems.find(item => item.id === newItem.id) ? false : true;
-      console.log(shouldAdd)
       if(shouldAdd){
         setCartItems([
           ...cartItems,
                 newItem
         ])
       } else {
-        setCartItems(items => 
-          [
-            ...cartItems
-          ]
-        )
+        setCartItems([...cartItems])
       }
   }
 
@@ -48,13 +65,13 @@ function App() {
     const newItems = cartItems.filter(item => item.id !== event.target.id)
     const oldItems = cartItems.filter(item => item.id === event.target.id)
     oldItems.forEach(item => item.count = 0)
-    // updateCount()
     setCartItems(newItems)
   }
 
   const cartSettings = {
     addToCart,
     deleteFromCart,
+    changeItemCount,
     numItems,
     cartItems
   }

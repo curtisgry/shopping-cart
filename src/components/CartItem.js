@@ -24,7 +24,12 @@ export default function CartItem({id, name, price, count, img}) {
             <div className="cart-item-info">
                 <div>
                     <p>${price}</p>
-                    <p>{count ? `x${count}` : ''}</p>
+                    <div className="count-container">
+                        <button id={id} onClick={cartContext.changeItemCount}>-</button>
+                        <p>{count ? `x${count}` : 'x1'}</p>
+                        <button id={id} onClick={cartContext.changeItemCount}>+</button>
+                    </div>
+                    
                 </div>
                 <button 
                 className="btn" 
