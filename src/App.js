@@ -8,6 +8,7 @@ import Nav from './components/Nav';
 import Shop from './pages/Shop';
 import CartContext from './context/CartContext';
 import Cart from './components/Cart';
+import Footer from './components/Footer';
 
 function App() {
   const [cartItems, setCartItems] = useState([])
@@ -91,6 +92,7 @@ function App() {
           <Cart/>
         </Route>
       </Switch>
+      <Footer />
     </div>
     </CartContext.Provider>
   );
